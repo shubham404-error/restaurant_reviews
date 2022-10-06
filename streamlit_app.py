@@ -52,12 +52,13 @@ def main():
         
     st.success(review_result)
     
-    html_temp_2 = '''
+    html_temp_2 ="""""
      <div>
      <a href='https://medium.com/@shubhamparinati/restaurant-review-a-beginners-guide-to-nlp-sentimental-analysis-b2ded804b30b>To Know How It works Click Here!</a>
      </div>
-     '''
-     st.markdown(html_temp_2,unsafe_allow_html=True)
+     """
+    st.markdown(html_temp_2,unsafe_allow_html=True)
+     
 
 if __name__=='__main__':
     main()        
