@@ -34,9 +34,8 @@ def main():
     # giving a title
     st.title("Restaurant Reviews Classifier using NLP")
     html_temp = """
-    <div style="background-color:#00FFFF;padding:10px">
+    <div style="background-color:tomato;padding:10px">
     <h2 style="color:white;text-align:center;">Restaurant Reviews ML App </h2>
-    <a href='https://medium.com/@shubhamparinati/restaurant-review-a-beginners-guide-to-nlp-sentimental-analysis-b2ded804b30b>To Know How It works Click Here!</a>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
@@ -52,6 +51,13 @@ def main():
         review_result=review_prediction([user_input])
         
     st.success(review_result)
+    
+    html_temp_2 = '''
+     <div>
+     <a href='https://medium.com/@shubhamparinati/restaurant-review-a-beginners-guide-to-nlp-sentimental-analysis-b2ded804b30b>To Know How It works Click Here!</a>
+     </div>
+     '''
+     st.markdown(html_temp_2,unsafe_allow_html=True)
 
 if __name__=='__main__':
     main()        
