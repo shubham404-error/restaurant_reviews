@@ -8,10 +8,10 @@ import streamlit as st
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 #model filename
-loaded_model= pickle.load(open(r"C:\Users\ASUS\Desktop\ML\Restaurant Review Project\reviews_classifier.sav", 'rb'))
+loaded_model= pickle.load(open("reviews_classifier.sav", 'rb'))
 cv = CountVectorizer(max_features = 2000)
 #loading the corpus
-with open(r"C:\Users\ASUS\Desktop\ML\Restaurant Review Project\corpus.data", 'rb') as filehandle:
+with open("corpus.data", 'rb') as filehandle:
     # read the data as binary data stream
     corpus = pickle.load(filehandle)
 #fitting the count vectorizer with the corpus
